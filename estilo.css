@@ -1,4 +1,13 @@
-body {
-	background: red;
-	
+del {
+	display:none;
 }
+dt {
+	font-weight: bold;
+}
+
+.separado {
+	margin-bottom:50px;
+	border-bottom:1px solid #ccc;
+}
+
+.subrayado {}
