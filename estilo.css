@@ -1,13 +1,21 @@
-del {
-	display:none;
+p, h1, h2, h3, h4, h5, h6, ul, ol{
+	margin-top: 0;
+	margin-bottom: 15px;
 }
-dt {
-	font-weight: bold;
+.mainwrapper{
+	background-color: #eee;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
 }
-
-.separado {
-	margin-bottom:50px;
-	border-bottom:1px solid #ccc;
+.menu{
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+	flex-wrap: wrap;
 }
-
-.subrayado {}
+.menu__item{
+	list-style-type: none;
+}
