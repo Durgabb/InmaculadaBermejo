@@ -1,50 +1,27 @@
 html{
 	font-size: 20px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 p, h1, h2, h3, h4, h5, h6, ul, ol{
 	margin-top: 0;
 	margin-bottom: 15px;
 }
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Abhaya Libre', Georgia, Times News Roman, serif;
+}
+p{
+	font-weight: 300;
+}
 .mainwrapper{
 	background-color: #eee;
 	max-width: 2000px;
-	padding: 15px;
 	margin: 0 auto;
-}
-.cabecera{
-	background-color: #ccc;
-	padding: 15px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right:0;
 }
 main {
 	margin-top:100px;
+	padding: 15px;
 }
-.cabecera__titulo{
-	margin-bottom: 0;
-}
-.menu{
-	padding: 0;
-}
-.cabecera__menu .menu{
-	margin-bottom: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.cabecera__menu{
-	margin-left: auto;
-	width: 40%;
-}
-.menu__item{
-	list-style-type: none;
-	display: inline-block;
-}
+
 .verde{
 	outline: 1px solid green;
 }

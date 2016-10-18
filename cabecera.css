@@ -1,0 +1,34 @@
+.cabecera{
+	background-color: rgba(200, 200, 200, 0.5);
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+}
+.cabecera__titulo{
+	margin-bottom: 0;
+}
+.cabecera__menu{
+	margin-left: auto;
+	width: 40%;
+}
+.cabecera__menu .menu{
+	margin-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+.menu{
+	padding: 0;
+}
+.menu__item{
+	list-style-type: none;
+	display: inline-block;
+}
