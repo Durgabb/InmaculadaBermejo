@@ -12,13 +12,26 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-weight: 300;
 }
+a, a:link{
+	color: green;
+	text-decoration: none;
+}
+a:visited{
+	color:#000;
+}
+a:focus, a:hover{
+	border-bottom: 3px solid green;
+	color: green;
+}
+a:active{
+	background-color: yellow;
+}
 .mainwrapper{
 	background-color: #eee;
 	max-width: 2000px;
 	margin: 0 auto;
 }
 main {
-	margin-top:100px;
 	padding: 15px;
 }
 
@@ -43,4 +56,17 @@ main {
 	top: 10px;
 	left: 10px;
 	background-color: yellow;
+}
+.footer{
+	display:flex;
+	justify-content: space-between;
+	margin: 0 15px;
+	padding: 15px 0;
+	border-top: 1px solid #999;
+
+}
+.footer p{
+	margin-bottom: 0;
+	font-size: 0.75rem;
+	color: #444;
 }

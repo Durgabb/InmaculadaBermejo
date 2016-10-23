@@ -1,6 +1,6 @@
 .cabecera{
 	background-color: rgba(200, 200, 200, 0.5);
-	padding: 15px;
+	padding: 0 15px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -14,21 +14,40 @@
 }
 .cabecera__menu{
 	margin-left: auto;
-	width: 40%;
 }
 .cabecera__menu .menu{
 	margin-bottom: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items:center;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-weight: 700;
+	font-size: 0.8rem;
 }
-
-
-
 .menu{
 	padding: 0;
 }
 .menu__item{
 	list-style-type: none;
 	display: inline-block;
+}
+.menu a, .menu a:link{
+	color:#000;
+	text-decoration: none;
+}
+.menu a:focus,.menu a:hover{
+	border-bottom: 0px solid transparent;
+	color: #000;
+}
+.menu a:active{
+	background-color: none;
+}
+.cabecera__menu .menu__item a{
+	padding: 20px;
+	display: inline-block;
+}
+.cabecera__menu .menu__item a:hover{
+	background-color: rgba(0,0,0,0.15);
 }
