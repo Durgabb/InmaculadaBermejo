@@ -1,0 +1,23 @@
+.section{
+	padding-top: 60px;
+	margin: 0 auto;
+	max-width: 960px;
+}
+.section--conimagen{
+	display:flex;
+	justify-content: center;
+}
+.section ul{
+	font-weight: 300;
+	list-style-type: circle;
+}
+.section__imagen{
+	width: 35%;
+	margin-right: 5%;
+}
+.section__imagen img{
+	width: 100%;
+}
+.section__textos{
+	width: 60%;
+}
