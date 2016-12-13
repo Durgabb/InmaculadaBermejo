@@ -1,7 +1,15 @@
 .section{
-	padding-top: 60px;
-	margin: 0 auto;
+	padding: 40px;
+	margin: 60px auto 0 auto;
 	max-width: 960px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.section h2{
+	font-size: 2em;
+	color: #222;
+	border-bottom: 1px dotted #555;
 }
 .section--conimagen{
 	display:flex;

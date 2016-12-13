@@ -20,11 +20,11 @@ a:visited{
 	color:#000;
 }
 a:focus, a:hover{
-	border-bottom: 3px solid green;
-	color: green;
+	border-bottom: 1px dotted #222;
+	
 }
 a:active{
-	background-color: yellow;
+	font-weight: 400;
 }
 .mainwrapper{
 	background-color: #eee;

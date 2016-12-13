@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inmaculada Bermejo</title>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="cabecera.css">
 	<link rel="stylesheet" href="imagenportada.css">
 	<link rel="stylesheet" href="section.css">
 	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
 	<div class="mainwrapper">
@@ -23,16 +25,21 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="imagenportada" id="home">
-			
+		<div id="home"></div>
+		<div id="slider">
+			<div class="imagenportada imagenportada--1"></div>
+			<div class="imagenportada imagenportada--2"></div>
+			<div class="imagenportada imagenportada--3"></div>
 		</div>
 		<main>
 			<section class="section">
 				<h2>Terapias Alternativas</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam alias delectus qui magni inventore, quidem doloribus ipsa adipisci rem. Sunt, quam recusandae. Eos, vel perferendis molestiae doloremque. Iste, culpa, accusamus.</p>
 			</section>
-			<section id="about" class="section section--conimagen">
+			<div id="about" ></div>
+			<section class="section section--conimagen">
 				<div class="section__imagen">
+					<img src="images/inmaculadabermejo.jpg" alt="Inmaculada Bermejo">
 					<img src="images/inmaoviedo.jpg" alt="Inmaculada Bermejo">
 				</div>
 				<div class="section__textos">
@@ -44,7 +51,8 @@
 					<p>Todo ello, junto con la vida, me sigue aportando la visión y la experiencia en el camino de discernir aquello con lo que inconscientemente me separo o me separaba de la paz y de lo que me lleva a ella, que no es más que un camino de discernimiento y deshacimiento de mis creencias subconscientes, a través de las cuales percibimos en la vida todo aquello que nos causa dolor.</p>
 				</div>
 			</section>
-			<section id="info" class="section">
+			<div id="info"></div>
+			<section class="section">
 				<h2>Formación</h2>
 				<p>El desarrollo y la práctica incluyen aspectos como:</p>
 				<ul>
@@ -58,7 +66,8 @@
 				</ul>
 				<p>Las actividades se realizan en encuentros tanto individuales como de grupo.</p>
 			</section>
-			<section id="contact" class="section">
+			<div id="contact"></div>
+			<section class="section">
 				<h2>Contacto</h2>
 				<p>Teléfono: 648636315</p>
 				<p>Correo electrónico: zinduarenas@yahoo.es</p>
@@ -66,8 +75,27 @@
 		</main>
 		<footer class="footer">
 			<p>(C) Inmaculada Bermejo 2016</p>
-			<p>Subir</p>
+			<p><a href="#home">Subir</a></p>
 		</footer>
 	</div>
+
+<script type="text/javascript">
+	// 1- Donde 
+	var slider = document.getElementById('slider');
+
+	// 2 - Cómo
+	var options = {
+	  				cellAlign: 'left',
+	  				contain: true,
+	  				wrapAround: true,
+	  				autoPlay: true,
+	  				prevNextButtons: false
+				};
+
+	// 3 - Ejecutar
+	var flkty = new Flickity(slider, options);
+
+</script>
+
 </body>
 </html>
