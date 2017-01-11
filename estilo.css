@@ -70,3 +70,16 @@ main {
 	font-size: 0.75rem;
 	color: #444;
 }
+#slider{
+	margin-top: 58px;
+}
+.flickity-page-dots{
+	bottom: 10px;
+}
+.flickity-page-dots .dot{
+	background: none;
+	border: 1px #fff solid;
+	width: 7px;
+	height: 7px;
+	opacity: .55;
+}

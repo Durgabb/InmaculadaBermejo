@@ -1,6 +1,6 @@
 .section{
 	padding: 40px;
-	margin: 60px auto 0 auto;
+	margin: 67px auto 0 auto;
 	max-width: 960px;
 	background-color: #fff;
 	border-radius: 4px;
@@ -22,10 +22,29 @@
 .section__imagen{
 	width: 35%;
 	margin-right: 5%;
+	margin-top: 2.5em;
 }
 .section__imagen img{
 	width: 100%;
 }
-.section__textos{
+.section--conimagen .section__textos{
 	width: 60%;
+}
+.section__textos p:last-child{
+	margin-bottom: 0px;
+}
+.section--primero{
+	margin-top: 15px;
+	background-color: transparent;
+	border-bottom: 2px #999 dotted;
+	box-shadow: none;
+	text-align: center;
+	border-radius: 0;
+	padding: 20px 0;
+	max-width: 800px;
+}
+.section--primero p{
+	font-family: 'Abhaya Libre', Georgia, Times News Roman, serif;
+	color: #222;
+	font-size: 1em;
 }
