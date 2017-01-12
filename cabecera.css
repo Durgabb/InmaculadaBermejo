@@ -2,8 +2,8 @@
 	background-color: rgba(200, 200, 200, 0.5);
 	padding: 0 15px;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,9 +12,16 @@
 }
 .cabecera__titulo{
 	margin-bottom: 0;
+	font-size: 1.75em;
+	padding: 9px 0;
 }
 .cabecera__menu{
 	margin-left: auto;
+	display: none;
+	position: absolute;
+    background-color: inherit;
+    left: 0;
+    top: 100%;
 }
 .cabecera__menu .menu{
 	margin-bottom: 0;
@@ -33,6 +40,8 @@
 .menu__item{
 	list-style-type: none;
 	display: inline-block;
+	width: 100%;
+	text-align: center;
 }
 .menu a, .menu a:link{
 	color:#000;
@@ -47,8 +56,72 @@
 }
 .cabecera__menu .menu__item a{
 	padding: 20px;
-	display: inline-block;
+	display: block;
 }
 .cabecera__menu .menu__item a:hover{
 	background-color: rgba(0,0,0,0.15);
+}
+.cabecera__boton{
+	border: none;
+	margin: 0;
+	background-color: transparent;
+	padding: 0;
+}
+.cabecera__boton span{
+	height: 5px;
+	width: 30px;
+	background-color: rgba(0,0,0,0.15);
+	display: block;
+	border-radius: 2px;
+	margin: 3px 0;
+}
+.cabecera__boton:focus{
+	outline: none;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .cabecera{
+     	flex-wrap: wrap;
+    }
+    .cabecera__menu{
+    	position: static;
+	    background-color: transparent;
+	    width: 100%;
+    }
+    .cabecera__menu .menu{
+    	letter-spacing: 0;
+    }
+    .cabecera__menu .menu__item a{
+    	padding: 10px;
+    }
+    .cabecera__titulo{
+    	font-size: 2em;
+    	padding: 6px 0;
+    }
+    .menu__item{
+    	width: auto;
+    	flex-grow: 1;
+    }
+}
+@media screen and (min-width:640px) {
+	.cabecera__menu .menu{
+    	letter-spacing: 0.15em;
+    }
+    .cabecera__menu .menu__item a{
+    	padding: 20px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .cabecera__boton{
+    	display: none;
+    }
+    .menu__item{
+    	flex-grow: 0;
+    }
+    .cabecera__menu{
+    	width: auto;
+    	display:block !important;
+    }
 }
