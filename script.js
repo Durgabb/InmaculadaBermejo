@@ -4,4 +4,10 @@ $(document).ready(function(){
 	};
 
 	$(".cabecera__boton").on("click", mostrarMenu);
+
+	function ocultarMenu(){
+		$(".cabecera__menu").slideUp(200)
+	}
+
+	$(".menu__item").on("click", ocultarMenu)
 })
