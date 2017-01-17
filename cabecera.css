@@ -105,7 +105,7 @@
     	flex-grow: 1;
     }
 }
-@media screen and (min-width:640px) {
+@media screen and (min-width:650px) {
 	.cabecera__menu .menu{
     	letter-spacing: 0.15em;
     }
